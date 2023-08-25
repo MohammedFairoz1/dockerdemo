@@ -16,7 +16,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	@RequestMapping("/add")
+	@RPostMapping("/add")
 	public String addUser(@RequestBody User user) {
 		
 		User user1=userService.add(user);
